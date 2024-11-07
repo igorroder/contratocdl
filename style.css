@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 210mm; /* largura de uma página A4 */
+  padding: 20px;
+  background: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border: 2px solid #353535;
+  padding: 0 10px;
+}
+
+.logo {
+  width: 160px;
+  height: 60px;
+  margin-right: 15px;
+  object-fit: cover;
+
+}
+
+.header-content {
+  flex: 1;
+}
+
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  border-right: 2px solid #353535;
+  border-left: 2px solid #353535;
+  border-bottom: 2px solid #353535;
+}
+
+p {
+  font-size: 12px;
+}
+
+.form-section p,
+.form-section td,
+.signature-section p,
+footer p {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-top: 0;
+  border-bottom: 2px solid #353535;
+  border-right: 2px solid #353535;
+  border-left: 2px solid #353535;
+}
+
+.tr-t {
+  border-top: 2px solid #353535;
+}
+
+td {
+  padding-left: 3px;
+  vertical-align: top;
+}
+
+th {
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.divider {
+  border-right: 2px solid #353535;
+}
+
+strong {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+}
+
+.col-wide {
+  width: 40%;
+}
+
+.col-medium {
+  width: 25%;
+}
+
+.col-narrow {
+  width: 15%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.single {
+  white-space: nowrap;
+  padding: 5px 3px 3px;
+}
+
+.singleLine {
+  color: #00000000;
+}
+
+.form-section {
+  margin-bottom: 5px;
+}
+
+.signature-section {
+  border: 2px solid #353535;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.signature-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
+
+}
+
+.signature-container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 2px solid #353535;
+
+}
+
+.signatureP {
+  position: relative;
+  text-align: center;
+  width: 250px;
+  top: 10px;
+  border-top: 1.5px solid #353535;
+  padding-top: 5px;
+  margin-bottom: 0px !important;
+}
+
+.signature-description {
+  padding-bottom: 35px;
+}
+
+.signature-description2 {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-sem-borda {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #00000000;
+  font-size: 12px;
+}
+
+.input-width-p-single {
+  position: absolute;
+  width: 155px;
+}
+
+.input-width-m-single {
+  position: absolute;
+  width: 495px;
+}
+
+.input-width-p {
+  position: absolute;
+  width: 155px;
+}
+
+.input-width-m {
+  position: absolute;
+  width: 615px;
+}
+
+.signature-form {
+  display: flex;
+  width: 50%;
+  white-space: nowrap;   
+}
+
+.checkbox-sem-borda {
+  border: none;
+  outline: none;
+  appearance: none;          /* Remove o estilo padrão do checkbox */
+  width: 20px;               /* Define a largura do checkbox */
+  height: 20px;              /* Define a altura do checkbox */
+  cursor: pointer;           /* Mostra o cursor de mão ao passar por cima */
+}
+
+.checkbox-sem-borda:checked {
+  background-color: #007bff00; /* Cor de fundo quando marcado */
+}
+
+.checkbox-sem-borda:checked::before {
+  content: 'x';              /* Adiciona um símbolo de check */
+  color: rgb(0, 0, 0);
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+.botao-flutuante {
+  position: fixed;              /* Fixa o botão na tela */
+  bottom: 20px;                 /* Espaçamento inferior */
+  right: 20px;                  /* Espaçamento à direita */
+  background-color: #007bff;    /* Cor de fundo */
+  color: white;                 /* Cor do texto */
+  border: none;                 /* Remove a borda */
+  border-radius: 50px;          /* Bordas arredondadas */
+  padding: 15px 20px;           /* Espaçamento interno */
+  font-size: 16px;              /* Tamanho da fonte */
+  cursor: pointer;              /* Cursor de mão ao passar o mouse */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.botao-flutuante:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
