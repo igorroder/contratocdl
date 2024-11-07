@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 210mm; /* largura de uma página A4 */
+  width: 100%; /* largura de uma página A4 */
   padding: 20px;
   background: #ffffff;
 }
